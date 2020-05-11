@@ -38,7 +38,7 @@ public class Ex19 {
                         if (amount >= 0) {
                             if (balance >= amount) {
                                 balance = balance - amount;
-                                System.out.println("출금이 완료되었습니다");
+                                System.out.println("출금이 완료되었습니다 (현재 잔고: "+balance+")");
                                 withdraw = true;
                             } else {
                                 System.out.println("잔고를 초과하는 금액은 출금하실 수 없습니다 (현재 잔고: "+balance+")");
