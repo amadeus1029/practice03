@@ -13,7 +13,7 @@ public class Ex20 {
         boolean endGame = false;
 
         do {
-            System.out.print(">>");
+            System.out.print(">> ");
             int submitNum = findNum.nextInt();
             if(submitNum>0&&submitNum<101) {
                 if(submitNum<answer) {
