@@ -10,7 +10,7 @@ public class Ex20 {
         System.out.println("=======================");
         int answer = (int)(Math.random()*100)+1;
         System.out.println("정답:"+answer);
-        boolean endGame = true;
+        boolean endGame = false;
 
         do {
             System.out.print(">>");
@@ -32,16 +32,16 @@ public class Ex20 {
                                 System.out.println("=======================");
                                 System.out.println("   [숫자맞추기 게임 종료]  ");
                                 System.out.println("=======================");
-                                endGame = false;
+                                endGame = true;
                                 findNum.close();
                                 break;
                             case 'n' :
                                 correctAnswer = true;
-                                answer = (int)(Math.random()*100)+1;
-                                System.out.println("정답:"+answer);
                                 System.out.println("=======================");
                                 System.out.println("  [숫자맞추기 게임 재시작]  ");
                                 System.out.println("=======================");
+                                answer = (int)(Math.random()*100)+1;
+                                System.out.println("정답:"+answer);
                                 break;
                             default :
                                 correctAnswer = false;
@@ -53,6 +53,6 @@ public class Ex20 {
                 System.out.println("숫자게임의 정답은 1과 100 사이의 숫자입니다, 다시 입력해주세요.");
                 continue;
             }
-        } while (endGame);
+        } while (!endGame);
     }
 }
