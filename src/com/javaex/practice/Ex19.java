@@ -5,13 +5,13 @@ import java.util.Scanner;
 public class Ex19 {
     public static void main(String[] args) {
         Scanner bankSystem = new Scanner(System.in);
-        System.out.println("---------------------------");
-        System.out.println("1.입금 ∥ 2.출금 ∥ 3.잔고 ∥ 4.종료");
-        System.out.println("---------------------------");
         int balance = 0;
         int amount;
         boolean keepWork = true;
         do {
+            System.out.println("---------------------------");
+            System.out.println("1.입금 ∥ 2.출금 ∥ 3.잔고 ∥ 4.종료");
+            System.out.println("---------------------------");
             System.out.print("원하시는 메뉴를 선택하세요> ");
             int menu = bankSystem.nextInt();
             switch (menu) {
