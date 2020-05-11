@@ -7,8 +7,6 @@ public class Ex17 {
         Scanner paintStar = new Scanner(System.in);
         System.out.print("숫자를 입력하세요: ");
         int num;
-        int length = 0;
-        int amount = 0;
         boolean again = false;
         do {
             if(again) {
@@ -16,13 +14,13 @@ public class Ex17 {
             }
             num = paintStar.nextInt();
             again = true;
-        }while(num<=0);
-        for(int i=num;i>0;i--) {
-            for(int j=0;j<i;j++) {
-                System.out.print("*");
+            for(int i=num;i>0;i--) {
+                for(int j=0;j<i;j++) {
+                    System.out.print("*");
+                }
+                System.out.println("");
             }
-            System.out.println("");
-        }
+        }while(num<=0);
         paintStar.close();
     }
 }

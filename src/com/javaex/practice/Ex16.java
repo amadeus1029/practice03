@@ -16,13 +16,13 @@ public class Ex16 {
             }
             num = findFive.nextInt();
             again = true;
-        }while(num<=0);
-        for(int i=1;i<=num;i++) {
-            if(i%5==0) {
-                length++;
-                amount = amount + i;
+            for(int i=1;i<=num;i++) {
+                if(i%5==0) {
+                    length++;
+                    amount = amount + i;
+                }
             }
-        }
+        }while(num<=0);
         System.out.println("5의 베수의 개수: "+length);
         System.out.println("5의 배수의 합: "+amount);
         findFive.close();

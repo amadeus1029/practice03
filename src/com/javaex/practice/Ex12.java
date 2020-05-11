@@ -15,10 +15,10 @@ public class Ex12 {
             }
             num = calcFactorial.nextInt();
             again = true;
+            for(int i=1;i<=num;i++) {
+                result = result * i;
+            }
         }while(num<=0);
-        for(int i=1;i<=num;i++) {
-            result = result * i;
-        }
 
         System.out.println("결과값: "+result);
         calcFactorial.close();

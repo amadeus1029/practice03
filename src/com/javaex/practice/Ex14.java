@@ -16,14 +16,14 @@ public class Ex14 {
             }
             num = calcTotalAdd.nextInt();
             again = true;
-        }while(num<=0);
-        for(int i=1;i<=num;i++) {
-            System.out.print(i);
-            if(i<num) {
-                System.out.print("+");
+            for(int i=1;i<=num;i++) {
+                System.out.print(i);
+                if(i<num) {
+                    System.out.print("+");
+                }
+                result = result + i;
             }
-            result = result + i;
-        }
+        }while(num<=0);
         System.out.println("");
         System.out.println("합계: "+result);
 
