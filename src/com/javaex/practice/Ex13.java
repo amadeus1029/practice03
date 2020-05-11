@@ -16,7 +16,7 @@ public class Ex13 {
             num = calcTotalAdd.nextInt();
             again = true;
             for(int i=1;i<=num;i++) {
-                result = result + i;
+                result += i;
             }
         }while(num<=0);
 

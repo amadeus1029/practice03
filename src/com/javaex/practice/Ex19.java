@@ -21,7 +21,7 @@ public class Ex19 {
                         System.out.print("입금액> ");
                         amount = bankSystem.nextInt();
                         if (amount >= 0) {
-                            balance = balance + amount;
+                            balance += amount;
                             System.out.println("입금이 완료되었습니다 (현재 잔고: "+balance+")");
                             deposit = true;
                         } else {
@@ -37,7 +37,7 @@ public class Ex19 {
                         amount = bankSystem.nextInt();
                         if (amount >= 0) {
                             if (balance >= amount) {
-                                balance = balance - amount;
+                                balance -= amount;
                                 System.out.println("출금이 완료되었습니다 (현재 잔고: "+balance+")");
                                 withdraw = true;
                             } else {

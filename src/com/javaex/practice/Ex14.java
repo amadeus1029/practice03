@@ -21,7 +21,7 @@ public class Ex14 {
                 if(i<num) {
                     System.out.print("+");
                 }
-                result = result + i;
+                result += i;
             }
         }while(num<=0);
         System.out.println("");

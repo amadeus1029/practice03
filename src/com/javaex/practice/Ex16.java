@@ -19,7 +19,7 @@ public class Ex16 {
             for(int i=1;i<=num;i++) {
                 if(i%5==0) {
                     length++;
-                    amount = amount + i;
+                    amount += i;
                 }
             }
         }while(num<=0);
