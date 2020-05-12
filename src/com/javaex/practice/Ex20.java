@@ -51,7 +51,6 @@ public class Ex20 {
                 }
             } else {
                 System.out.println("숫자게임의 정답은 1과 100 사이의 숫자입니다, 다시 입력해주세요.");
-                continue;
             }
         } while (!endGame);
     }
